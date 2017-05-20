@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="yourTrip">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <base href="http://localhost/yourtrip/">
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+
+    <body ng-cloak>
+
+        <header>
+            <div class="menuArrow">
+                <a data-activates="slide-out" class="btn-floating waves-effect waves-light right collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+
+            <nav>
+                <ul id="slide-out" class="side-nav">
+                    <li><a href="home"><i class="material-icons">view_list</i>Trip List</a></li>
+                    <li><a href="account"><i class="material-icons">settings</i>Account</a></li>
+                    <li><a href="#"><i class="material-icons">input</i>Logout</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="addTrip"><i class="material-icons">add</i>Add new trip</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <ng-view></ng-view>
+     
+        <!-- core scripts -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jQuery.js"></script>
+        <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+
+        <!-- local scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <!-- angular -->
+        <script type="text/javascript" src="js/app/module.js"></script>
+        <script type="text/javascript" src="js/app/components/sites/mainSite/mainSite-component.js"></script>
+        <script type="text/javascript" src="js/app/components/sites/mainSite/mainSite-rating-component.js"></script>
+
+        <script type="text/javascript" src="js/app/components/sites/tripDetails/tripDetails-component.js"></script>
+        
+
+    </body>
+</html>

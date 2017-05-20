@@ -1,0 +1,22 @@
+header .menuArrow {
+  padding: 20px; }
+  header .menuArrow a {
+    background-color: #14649c; }
+    header .menuArrow a:hover {
+      background-color: #14649c; }
+
+header nav {
+  background-color: transparent;
+  box-shadow: none; }
+
+.tripList .singleTrip .row {
+  margin-bottom: 0px; }
+  .tripList .singleTrip .row .textPlace {
+    padding: 5px 20px; }
+    .tripList .singleTrip .row .textPlace .btnPlace {
+      padding: 10px; }
+    .tripList .singleTrip .row .textPlace .rating {
+      padding: 10px; }
+
+.pagination li.active {
+  background-color: #14649c; }

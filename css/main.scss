@@ -1,0 +1,51 @@
+$blue: #14649c;
+
+header {
+
+    .menuArrow {
+
+        padding: 20px;
+
+        a {
+            background-color: $blue;
+
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    } // menuArrow
+
+    nav {
+
+        background-color: transparent;
+        box-shadow: none;
+    } // nav
+} //header
+
+.tripList {
+    .singleTrip {
+        .row {
+            margin-bottom: 0px;
+
+            .textPlace {
+                padding: 5px 20px;
+
+                .btnPlace {
+                    padding: 10px;
+                }
+
+                .rating {
+                    padding: 10px;
+                }
+            }
+        }
+    } //singleTrip
+} //tripList
+    
+.pagination {
+    li {
+        &.active {
+            background-color: $blue;
+        }
+    }
+} //pagination
